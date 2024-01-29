@@ -1,0 +1,24 @@
+.row {
+    --bs-gutter-x: 0;
+}
+
+.sections {
+    height: 100vh;
+}
+
+.section_left, .section_right {
+    background: #101010;
+}
+
+.section_center {
+    background: #363636;
+}
+
+.controls {
+    height: 10vh;
+    width: 100%;
+    background: #363636;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid black;
+}
