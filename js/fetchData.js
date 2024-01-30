@@ -2,7 +2,7 @@ export {fetchData};
 
   const fetchData = async (id) => {
 
-    const url = 'https://striveschool-api.herokuapp.com/api/deezer/search?q=elthon_john'
+    const url = 'https://striveschool-api.herokuapp.com/api/deezer/search?q=yellowcard'
     
     let  options = {
          method: "GET",
