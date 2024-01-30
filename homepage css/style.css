@@ -1,0 +1,10 @@
+/* SECTION CENTER */
+.section_center {
+    background: #363636;
+    width: 65%;
+}
+.card{
+    background-image: linear-gradient(to top, #000000, #808080);
+    background-size: 100% 100%;
+}
+/* SECTION CENTER */

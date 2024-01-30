@@ -114,16 +114,6 @@
     bottom: 0;
     border-top: 1px solid black;
 }
-/* SECTION CENTER */
-.section_center {
-    background: #363636;
-    width: 65%;
-}
-.card{
-    background-image: linear-gradient(to top, #000000, #808080);
-    background-size: 100% 100%;
-}
-/* SECTION CENTER */
 .controls {
     height: 10%;
     width: 100%;

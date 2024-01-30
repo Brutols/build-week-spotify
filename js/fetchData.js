@@ -1,6 +1,6 @@
 export {fetchData};
 
-  const fetchData = async (method,id,data) => {
+  const fetchData = async (id) => {
 
     const url = 'https://striveschool-api.herokuapp.com/api/deezer/search?q=elthon_john'
     
@@ -10,9 +10,6 @@ export {fetchData};
             'Content-Type': 'application/json',
                 },
         }
-
-        data ? options.body = JSON.stringify(data) : null
-
         try{
             let resp = await fetch(url,options)
             if (resp.status >= 200 && resp.status < 300){
