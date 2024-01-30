@@ -91,7 +91,7 @@
     color: white;
     transition-delay: 0.1s;
 }
-.home:hover, .search:hover, .library:hover, .add:hover, .favourite:hover, .save:hover{
+.home:hover, .search:hover, .library:hover, .add:hover, .favourite:hover, .save:hover, .account:hover{
     background-color: #363636;
     transition: 0.3s;
     transition-delay: 0.1s;
@@ -100,7 +100,23 @@
 .section_right{
     width: 15%;
 }
-
+.section_right .account img{
+    width: 27.5px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.section_right .account .account-info h6{
+    font-size: x-small;
+    color: #b3b3b3
+}
+.section_right .account .account-info p, .section_right .account p{
+    font-size: xx-small;
+    color: #b3b3b3
+}
+.section_right .account .account-info ion-icon{
+    color: #b3b3b3
+}
 .section_center {
     background: #363636;
     width: 65%;
