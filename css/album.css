@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+
+body {
+  background-color: #101010;
+}
+
+.sections {
+  height: 100vh;
+  margin-bottom: 10vh;
+}
+
+.section_left,
+.section_right {
+  background: #101010;
+}
+
+.section_center {
+  background: #363636;
+  position: relative;
+  min-height: 100vh;
+  height: fit-content;
+}
+
+.controls {
+  height: 10vh;
+  width: 100%;
+  background: #363636;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid black;
+}
+
+.jumbotron {
+  background: rgb(221, 188, 39);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(221, 188, 39, 1) 0%,
+    rgba(54, 54, 54, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(221, 188, 39, 1) 0%,
+    rgba(54, 54, 54, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(221, 188, 39, 1) 0%,
+    rgba(54, 54, 54, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ddbc27",endColorstr="#363636",GradientType=1);
+  color: white;
+  height: 60vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.jumbotron_controls {
+  padding-inline: 20px;
+}
+
+.controls_btns ion-icon {
+  font-size: 2rem;
+  color: #363636;
+  margin-top: 5px;
+}
+
+.controls_profile {
+  background: #363636;
+  border-radius: 50px;
+  padding: 3px;
+  width: 120px;
+}
+
+.controls_profile img {
+  width: 25px;
+  border-radius: 50%;
+}
+
+.jumbotron_main {
+  padding: 20px;
+}
+
+.jumbotron_main img {
+  width: 150px;
+  aspect-ratio: 1/1;
+}
+
+.jumbotron_text {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  align-self: flex-end;
+  margin-left: 20px;
+}
+
+.jumbotron_text h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.jumbotron_text h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.album_artist img {
+  width: 25px;
+  border-radius: 50%;
+}
+
+.album_artist h6 {
+  font-size: 12px;
+}
+
+.album_artist a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.album_artist a:hover {
+  color: #363636;
+}
+
+.tracks {
+  margin-top: 50vh;
+  width: 100%;
+  padding-inline: 20px;
+  background: #3636368b;
+}
+
+.tracks_controls {
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.tracks_controls ion-icon {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.tracks_controls .icon_play {
+  color: black;
+  background-color: rgb(76, 177, 76);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.tracks_sections {
+  margin-top: 1rem;
+  padding-inline: 20px;
+  color: rgba(255, 255, 255, 0.697);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.697);
+}
+
+.tracks_sections h6 {
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.tracks_list {
+  padding-inline: 20px;
+  padding-block: 5px;
+}
+
+.track {
+  color: white;
+}
+
+.track_number {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.697);
+}
+
+.track_title {
+  font-weight: 500;
+}
+
+.track_plays {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.697);
+}
+
+.track_artist {
+  color: rgba(255, 255, 255, 0.697);
+}
+
+.track_duration {
+  color: rgba(255, 255, 255, 0.697);
+}
