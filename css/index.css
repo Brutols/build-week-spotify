@@ -1,9 +1,8 @@
+*{
+    object-fit: cover;
+}
 .row {
     --bs-gutter-x: 0;
-}
-
-.sections {
-    height: 100vh;
 }
 
 .section_left, .section_right {
@@ -13,14 +12,18 @@
 .section_right{
     width: 15%;
 }
-
+/* SECTION CENTER */
 .section_center {
     background: #363636;
     width: 65%;
 }
-
+.card{
+    background-image: linear-gradient(to top, #000000, #808080);
+    background-size: 100% 100%;
+}
+/* SECTION CENTER */
 .controls {
-    height: 10vh;
+    height: 10%;
     width: 100%;
     background: #363636;
     position: fixed;
