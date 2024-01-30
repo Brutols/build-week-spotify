@@ -1,16 +1,118 @@
-*{
-    object-fit: cover;
-}
 .row {
     --bs-gutter-x: 0;
+}
+
+.sections {
+    height: 100vh;
 }
 
 .section_left, .section_right {
     background: #101010;
     width: 20%;
 }
+.section_left .up{
+    height: 30%;
+}
+.section_left .down{
+    height: 67%;
+    overflow: scroll;
+}
+.down::-webkit-scrollbar {
+    width: 9px;
+    }
+    .down::-webkit-scrollbar-track {
+    background-color: #101010;
+    }
+    .down::-webkit-scrollbar-thumb {
+    background-color: #b3b3b3;
+    }
+.down p{
+    color: #b3b3b3;
+    margin-bottom: 0%;
+    font-size: 10px;
+    margin-right: 3px;
+}
+.down p:hover{
+    background-color: #363636;
+    transition-delay: 0.2s;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+.section_left .up .library{
+    margin-bottom: 19.188px;
+}
+.section_left .up{
+    padding-bottom: 1px;
+    border-bottom: 1px solid #b3b3b3;
+}
+.sfondo{
+    padding: 2px;
+    width: 14px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+#sfondoAdd{
+    background-color: #b3b3b3;
+}
+#sfondoHeart{
+    background: rgb(67,4,244);
+    background: linear-gradient(145deg, rgba(67,4,244,1) 13%, rgba(186,225,217,1) 100%);;
+}
+#sfondoBookmark{
+    background: rgb(0,63,51);
+    background: linear-gradient(145deg, rgba(0,63,51,1) 13%, rgba(0,67,53,1) 100%);
+}
+.section_left .up #sfondoHeart ion-icon{
+    color: white;
+}
+.section_left .up #sfondoAdd ion-icon{
+    color: black;
+}
+.section_left .up #sfondoBookmark ion-icon{
+    color: #149643;
+}
+.section_left .up h6{
+    color: #b3b3b3;
+}
+
+.section_left .up ion-icon:nth-child(-n+3){
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.section_left .up h6{
+    font-size: 10px;
+}
+
+.section_left .up h6:hover{
+    color: white;
+    transition-delay: 0.1s;
+}
+.home:hover, .search:hover, .library:hover, .add:hover, .favourite:hover, .save:hover{
+    background-color: #363636;
+    transition: 0.3s;
+    transition-delay: 0.1s;
+    cursor: pointer;
+}
 .section_right{
     width: 15%;
+}
+
+.section_center {
+    background: #363636;
+    width: 65%;
+}
+
+.controls {
+    height: 10vh;
+    width: 100%;
+    background: #363636;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid black;
 }
 /* SECTION CENTER */
 .section_center {
