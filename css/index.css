@@ -8,10 +8,15 @@
 
 .section_left, .section_right {
     background: #101010;
+    width: 20%;
+}
+.section_right{
+    width: 15%;
 }
 
 .section_center {
     background: #363636;
+    width: 65%;
 }
 
 .controls {

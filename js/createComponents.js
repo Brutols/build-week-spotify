@@ -1,5 +1,6 @@
-// Funzione per creare la card musicale
-export function createMusicCard(userData, trackData) {
+export {createMusicCard};
+
+function createMusicCard(userData, trackData) {
     const musicCardDiv = document.createElement('div');
     musicCardDiv.className = 'card';
     
