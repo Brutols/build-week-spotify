@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./homepage css/style.css">
+    <link rel="stylesheet" href="./homepage css/style.css" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -441,6 +441,46 @@
         </div>
       </div>
     </div>
-    <div class="controls"></div>
+    <div class="controls d-flex justify-content-between p-3">
+      <div
+        class="controls-left d-flex justify-content-start align-items-center gap-2"
+      >
+        <img
+          src="https://bp0.blogger.com/_74tG8e6ZDUQ/SJhxJaelb2I/AAAAAAAAAzk/IuorR42f-b4/s400/50_cent_massacre.jpg"
+          alt=""
+        />
+        <div class="d-flex flex-column">
+          <h6 class="mb-0">50 Cent</h6>
+          <p class="mb-0">Candy Shop</p>
+        </div>
+        <ion-icon name="heart-outline"></ion-icon>
+      </div>
+      <div class="controls-center d-flex flex-column align-items-center gap-1">
+        <div
+          class="controls-center-options d-flex justify-content-center align-items-center gap-3"
+        >
+          <ion-icon name="shuffle-outline"></ion-icon>
+          <ion-icon name="play-skip-back"></ion-icon>
+          <ion-icon name="play-circle"></ion-icon>
+          <ion-icon name="play-skip-forward"></ion-icon>
+          <ion-icon name="repeat"></ion-icon>
+        </div>
+        <div class="bar d-flex justify-content-center align-items-center gap-2">
+          <p class="mb-0">1:58</p>
+          <div class="progress"><div class="percent"></div></div>
+          <p class="mb-0">3:20</p>
+        </div>
+      </div>
+      <div
+        class="controls-right d-flex justify-content-end align-items-center gap-2"
+      >
+        <ion-icon name="flashlight-outline"></ion-icon>
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="layers-outline"></ion-icon>
+        <ion-icon name="volume-medium-sharp"></ion-icon>
+        <div class="progress"><div class="percent"></div></div>
+        <ion-icon name="resize-outline"></ion-icon>
+      </div>
+    </div>
   </body>
 </html>

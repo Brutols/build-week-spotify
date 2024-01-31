@@ -28,16 +28,12 @@
     }
 .down p{
     color: #b3b3b3;
+    border-radius: 6px;
     margin-bottom: 0%;
     font-size: 10px;
     margin-right: 3px;
 }
-.down p:hover{
-    background-color: #363636;
-    transition-delay: 0.2s;
-    transition: 0.3s;
-    border-radius: 6px;
-}
+
 .section_left .up .library{
     margin-bottom: 19.188px;
 }
@@ -91,7 +87,7 @@
     color: white;
     transition-delay: 0.1s;
 }
-.home:hover, .search:hover, .library:hover, .add:hover, .favourite:hover, .save:hover, .account:hover{
+.home:hover, .search:hover, .library:hover, .add:hover, .favourite:hover, .save:hover, .account:hover, .down p:hover{
     background-color: #363636;
     transition: 0.3s;
     transition-delay: 0.1s;
@@ -123,18 +119,83 @@
 }
 
 .controls {
-    height: 10vh;
+    height: 12.5vh;
     width: 100%;
-    background: #363636;
+    background: #181818;
     position: fixed;
     bottom: 0;
-    border-top: 1px solid black;
+    border-top: 1px solid #b3b3b3;
+    cursor: pointer;
 }
-.controls {
-    height: 10%;
+.controls-left, .controls-right{
+    width: 30%;
+}
+.controls-left img{
+    width: 45px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+}
+.controls-left h6{
+    color: white;
+    font-size: 13px;
+}
+.controls-left p{
+    font-size: 10px;
+    color: #b3b3b3;
+}
+.controls-left ion-icon, .controls-right ion-icon{
+    color: #b3b3b3;
+}
+.controls-right .progress{
+    width: 20%;
+    height: 3px;
+    background-color: #b3b3b3;
+    border-radius: 4px;
+}
+.controls-right .progress .percent{
+    width: 35%;
+    height: 3px;
+    background-color: white;
+    border-radius: 4px;
+}
+.controls-center .bar .progress{
+    width: 90%;
+    background-color: #b3b3b3;
+    height: 3px;
+    border-radius: 4px;
+}
+.controls-center .bar .progress .percent{
+    width: 60%;
+    background-color: white;
+    height: 3px;
+
+}
+.controls-center-options ion-icon:first-of-type, .controls-center-options ion-icon:last-of-type{
+    color: #1db954;
+}
+.controls-center-options ion-icon{
+    font-size: large;
+    color: #b3b3b3;
+}
+.controls-center-options ion-icon:nth-of-type(3){
+    font-size: xx-large;
+    color: white;
+    
+}
+.bar{
     width: 100%;
-    background: #363636;
-    position: fixed;
-    bottom: 0;
-    border-top: 1px solid black;
+}
+.bar p{
+    font-size: x-small;
+    width: 5%;
+    color: #b3b3b3;
+}
+.controls ion-icon:hover{
+    transform: scale(120%,120%);
+    transition: 0.3s;
+    transition-delay: 0.15s;
+    color: #1db954;
+}
+.controls-center{
+    width: 40%;
 }
