@@ -1,4 +1,5 @@
-import { fetchData } from './fetchData.js';
+import { createCard } from "./createComponents.js";
+import { fetchData } from "./fetchData.js";
 //import { createMusicCard } from './createComponents.js';
 
 // Esegui la fetch dei dati e crea la card musicale
@@ -20,7 +21,49 @@ import { fetchData } from './fetchData.js';
 //   }
 // });
 
-window.onload = fetchData;
+const cardWrapper = document.querySelector(".altro-di-ciò");
+const loader = document.querySelector(".loader_wrapper");
+let isDnone = true;
 
+const handleDnone = (el) => {
+  if (isDnone) {
+    el.classList.remove("d-none");
+    isDnone = false
+    console.log(isDnone);
+  } else {
+    el.classList.add("d-none");
+    isDnone = true
+    console.log(isDnone);
+  }
+};
 
+const queries = [
+  "metallica",
+  "linkin park",
+  "muse",
+  "50cent",
+  "eminem",
+  "kiss",
+  "snoop dogg",
+  "guns n' roses",
+  "milly vanilly",
+  "architects",
+];
 
+const initAlbums = () => {
+  handleDnone(loader);
+  queries.forEach(async (el) => {
+    const res = await fetchData(el);
+    console.log(res);
+    createCard(
+      res.data[0].album.cover_medium,
+      res.data[0].album.title,
+      res.data[0].rank,
+      res.data[0].album.id,
+      cardWrapper
+    );
+  });
+  setTimeout(() => {handleDnone(loader)}, "1000");
+};
+
+document.addEventListener("DOMContentLoaded", initAlbums());

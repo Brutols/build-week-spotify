@@ -68,6 +68,8 @@ background: linear-gradient(30deg, rgba(0,0,0,1) 0%, rgba(31,31,31,1) 100%);
 }
 .altro-di-ciò{
     margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 .altro-di-ciò .card{
     border-radius: 5px;
@@ -83,5 +85,14 @@ background: linear-gradient(315deg, rgba(24,24,24,1) 54%, rgba(23,23,23,1) 74%);
 }
 .altro-di-ciò .card h5, .altro-di-ciò .card p{
     font-size: x-small;
+}
+
+.card {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 /* SECTION CENTER */

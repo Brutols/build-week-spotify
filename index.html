@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./homepage css/style.css" />
+    <link rel="stylesheet" href="./css/loader.css">
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -30,6 +31,14 @@
     <script src="./js/index.js" type="module"></script>
   </head>
   <body class="row">
+    <div class="loader_wrapper d-flex justify-content-center align-items-center d-none">
+      <div class="loader-container">
+        <div class="loader">
+          <div class="shadow"></div>
+          <div class="pointer"></div>
+        </div>
+      </div>
+    </div>
     <div class="sections section_left">
       <div class="up mt-2 ms-2 me-3">
         <ion-icon
@@ -38,6 +47,7 @@
         ></ion-icon>
         <div
           class="home d-flex justify-content-start align-items-center p-1 gap-1 rounded"
+          onclick="location.href='./index.html';"
         >
           <ion-icon name="home"></ion-icon>
           <h6 class="mb-0">Home</h6>
@@ -331,57 +341,7 @@
         <!-- BUONASERA -->
         <!-- ALTRO DI CIO' CHE TI PIACE -->
         <h5 class="text-white my-3">Altro di ciò che ti piace</h5>
-        <div class="altro-di-ciò row justify-content-between">
-          <div class="card col-2 p-2">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-              alt="..."
-            />
-            <div class="card-body p-0">
-              <h5 class="text-white card-title mt-3">Card title</h5>
-              <p class="text-white card-text">Descrizione playlist</p>
-            </div>
-          </div>
-          <div class="card col-2 p-2">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-              alt="..."
-            />
-            <div class="card-body p-0">
-              <h5 class="text-white card-title mt-3">Card title</h5>
-              <p class="text-white card-text">Descrizione playlist</p>
-            </div>
-          </div>
-          <div class="card col-2 p-2">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-              alt="..."
-            />
-            <div class="card-body p-0">
-              <h5 class="text-white card-title mt-3">Card title</h5>
-              <p class="text-white card-text">Descrizione playlist</p>
-            </div>
-          </div>
-          <div class="card col-2 p-2">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-              alt="..."
-            />
-            <div class="card-body p-0">
-              <h5 class="text-white card-title mt-3">Card title</h5>
-              <p class="text-white card-text">Descrizione playlist</p>
-            </div>
-          </div>
-          <div class="card col-2 p-2">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-              alt="..."
-            />
-            <div class="card-body p-0">
-              <h5 class="text-white card-title mt-3">Card title</h5>
-              <p class="text-white card-text">Descrizione playlist</p>
-            </div>
-          </div>
+        <div class="altro-di-ciò gap-3">
         </div>
 
         <!-- ALTRO DI CIO' CHE TI PIACE -->

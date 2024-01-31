@@ -87,7 +87,7 @@ export const createJumbotron = (
 
   const link = document.createElement("a");
   link.id = artistId;
-  link.href = "#!";
+  link.href = `./artist.html?id=${artistId}`;
   link.textContent = artist;
   spanA.appendChild(link);
 

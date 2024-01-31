@@ -7,8 +7,11 @@ import {
 } from "./componentsAlbum.js";
 import { calcDuration } from "./helper.js";
 
+const params = new URLSearchParams(location.search);
+const id = params.get("id");
+
 const initAlbum = async () => {
-  const res = await fetchRequest({ url: constant.URL, id: constant.tempId });
+  const res = await fetchRequest({ url: constant.URL, id: id });
   console.log(res);
 
   createJumbotron(
