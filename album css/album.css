@@ -12,29 +12,13 @@ body {
 }
 
 .sections {
-  height: 100vh;
   margin-bottom: 10vh;
-}
-
-.section_left,
-.section_right {
-  background: #101010;
 }
 
 .section_center {
   background: #363636;
   position: relative;
   min-height: 100vh;
-  height: fit-content;
-}
-
-.controls {
-  height: 10vh;
-  width: 100%;
-  background: #363636;
-  position: fixed;
-  bottom: 0;
-  border-top: 1px solid black;
 }
 
 .jumbotron {
@@ -134,6 +118,7 @@ body {
 
 .tracks {
   margin-top: 50vh;
+  height: 50vh;
   width: 100%;
   padding-inline: 20px;
   background: #3636368b;
@@ -173,7 +158,19 @@ body {
 .tracks_list {
   padding-inline: 20px;
   padding-block: 5px;
+  overflow: scroll;
 }
+
+.tracks_list::-webkit-scrollbar {
+  width: 9px;
+  }
+  .tracks_list::-webkit-scrollbar-track {
+  background-color: #363636;
+  }
+  .tracks_list::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3;
+  }
+
 
 .track {
   color: white;
