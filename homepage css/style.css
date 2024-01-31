@@ -47,8 +47,13 @@ background: linear-gradient(30deg, rgba(0,0,0,1) 0%, rgba(31,31,31,1) 100%);
     background: rgb(42,42,42);
     background: linear-gradient(270deg, rgba(42,42,42,1) 70%, rgba(32,32,32,1) 80%);
     border-radius: 5px;
-    width: 279px;
 }
+
+.buonasera {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .buonasera img{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
