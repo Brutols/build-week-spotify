@@ -1,6 +1,6 @@
 import { fetchData } from "../js/fetchData.js";
 import * as constant from "./constant.js"
-import { createJumbotron } from "./componentArtist.js";
+import { createJumbotron,createTracksSection } from "./componentArtist.js";
 
 
 const displayArtist = async () => {
@@ -15,9 +15,14 @@ const displayArtist = async () => {
         songs[0].artist.id,
         '2',
         constant.centerSection);
-
+        const centerSectionTrackList = document.querySelector('.section_center .track-list')
+        console.log(songs);
     for (const song of songs) {
-        //console.log(song);
+
+        createTracksSection(
+            song.album.title,
+            song.album.cover_medium,
+            centerSectionTrackList)
     }
 
 }
