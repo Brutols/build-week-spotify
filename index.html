@@ -191,19 +191,26 @@
     <div class="sections section_center" id="musicCardContainer">
       <div class="container">
         <!-- BADGE -->
-        <div class="row justify-content-end">
+        <div class="d-flex justify-content-between align-items-center my-2">
+          <div class="d-flex align-items-center justify-content-start gap-2">
+            <ion-icon
+              class="fs-3 text-white"
+              name="chevron-back-circle-outline"
+            ></ion-icon>
+            <ion-icon
+              class="fs-3 text-white"
+              name="chevron-forward-circle-outline"
+            ></ion-icon>
+          </div>
           <div
-            class="col-2 bg-dark rounded-pill text-white row text-nowrap align-items-center"
+            class="col-2 account-section-center rounded-pill text-white d-flex justify-content-around flex-nowrap align-items-center p-1"
           >
-            <div class="col-3 badge">
-              <img
-                class="w-100 rounded-circle"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-                alt=""
-              />
-            </div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
+              alt=""
+            />
             <div class="col-7 overflow-hidden">
-              <p class="m-0 py-2 text-truncate">Lidia Nautilus</p>
+              <p class="m-0 text-truncate">Lidia Nautilus</p>
             </div>
             <div class="d-flex justify-content-center col-2">
               <ion-icon name="caret-down-outline"></ion-icon>
@@ -212,28 +219,27 @@
         </div>
         <!-- BADGE -->
         <!-- JUMBOTRON -->
-        <div class="jumbotron">
+        <div class="jumbtron">
           <!-- CARD -->
-          <div class="card flex-row w-100 p-2">
-            <div style="aspect-ratio: 1/1" class="d-flex w-25">
-              <img
-                class="w-100 card-img-top"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-                alt="..."
-              />
-            </div>
-            <div class="card-body w-75">
-              <p class="card-text">ALBUM</p>
-              <h2 class="card-title">TITOLO CANZONE</h2>
-              <h6 class="card-title">Artista</h6>
-              <p class="card-text">Ascolta il nuovo singolo di:</p>
-              <div class="d-flex gap-3 align-items-center">
-                <button class="bg-success rounded-pill border-dark border-1">
+          <div
+            class="cardtop d-flex flex-row align-items-center px-2 py-3 gap-5"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
+              alt="..."
+            />
+            <div class="mb-0 text-white card-body w-75">
+              <p class="mb-1 text-white card-text">ALBUM</p>
+              <h1 class="mb-0 text-white card-title">TITOLO CANZONE</h1>
+              <h6 class="mb-2 text-white card-title">Artista</h6>
+              <p class="mb-0 text-white card-text">
+                Ascolta il nuovo singolo di:
+              </p>
+              <div class="d-flex gap-3 align-items-center my-2">
+                <button class="rounded-pill border-dark border-1">
                   <p class="m-0 py-2 px-3 fw-bold">Play</p>
                 </button>
-                <button
-                  class="text-white bg-dark rounded-pill border-white border-1"
-                >
+                <button class="text-white rounded-pill border-white border-1">
                   <p class="m-0 py-2 px-3 fw-bold">Salva</p>
                 </button>
                 <ion-icon
@@ -247,129 +253,137 @@
         </div>
         <!-- JUMBOTRON -->
         <!-- BUONASERA -->
-        <h5>Buonasera</h5>
-        <div class="row gx-2">
-          <div class="col-4 bg-secondary d-flex align-items-center">
-            <div class="w-25">
-              <img
-                class="w-100"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-                alt=""
-              />
+        <h5 class="text-white my-3">Buonasera</h5>
+        <div class="buonasera row justify-content-between flex-wrap gap-2">
+          <div
+            class="col-4 buonasera-playlist d-flex justify-content-start align-items-center gap-2"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
+              alt=""
+            />
+            <div class="title">
+              <p class="m-0">Be the Young</p>
+              <p class="m-0">Be the Young</p>
             </div>
-            <div class="w-75"><p class="m-0">Be the Young</p></div>
           </div>
-          <div class="col-4 bg-secondary d-flex align-items-center">
-            <div class="w-25">
-              <img
-                class="w-100"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-                alt=""
-              />
+          <div
+            class="col-4 buonasera-playlist d-flex justify-content-start align-items-center gap-2"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
+              alt=""
+            />
+            <div class="title">
+              <p class="m-0">Be the Young</p>
+              <p class="m-0">Be the Young</p>
             </div>
-            <div class="w-75"><p class="m-0">Be the Young</p></div>
           </div>
-          <div class="col-4 bg-secondary d-flex align-items-center">
-            <div class="w-25">
-              <img
-                class="w-100"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-                alt=""
-              />
+          <div
+            class="col-4 buonasera-playlist d-flex justify-content-start align-items-center gap-2"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
+              alt=""
+            />
+            <div class="title">
+              <p class="m-0">Be the Young</p>
+              <p class="m-0">Be the Young</p>
             </div>
-            <div class="w-75"><p class="m-0">Be the Young</p></div>
           </div>
-          <div class="col-4 bg-secondary d-flex align-items-center">
-            <div class="w-25">
-              <img
-                class="w-100"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-                alt=""
-              />
+          <div
+            class="col-4 buonasera-playlist d-flex justify-content-start align-items-center gap-2"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
+              alt=""
+            />
+            <div class="title">
+              <p class="m-0">Be the Young</p>
+              <p class="m-0">Be the Young</p>
             </div>
-            <div class="w-75"><p class="m-0">Be the Young</p></div>
           </div>
-          <div class="col-4 bg-secondary d-flex align-items-center">
-            <div class="w-25">
-              <img
-                class="w-100"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-                alt=""
-              />
+          <div
+            class="col-4 buonasera-playlist d-flex justify-content-start align-items-center gap-2"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
+              alt=""
+            />
+            <div class="title">
+              <p class="m-0">Be the Young</p>
+              <p class="m-0">Be the Young</p>
             </div>
-            <div class="w-75"><p class="m-0">Be the Young</p></div>
           </div>
-          <div class="col-4 bg-secondary d-flex align-items-center">
-            <div class="w-25">
-              <img
-                class="w-100"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-                alt=""
-              />
+          <div
+            class="col-4 buonasera-playlist d-flex justify-content-start align-items-center gap-2"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
+              alt=""
+            />
+            <div class="title">
+              <p class="m-0">Be the Young</p>
+              <p class="m-0">Be the Young</p>
             </div>
-            <div class="w-75"><p class="m-0">Be the Young</p></div>
           </div>
         </div>
         <!-- BUONASERA -->
         <!-- ALTRO DI CIO' CHE TI PIACE -->
-        <h5>Altro di ciò che ti piace</h5>
-        <div class="row justify-content-between">
-          <div class="card col-2">
+        <h5 class="text-white my-3">Altro di ciò che ti piace</h5>
+        <div class="altro-di-ciò row justify-content-between">
+          <div class="card col-2 p-2">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-              class="card-img-top"
               alt="..."
             />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Descrizione playlist</p>
+            <div class="card-body p-0">
+              <h5 class="text-white card-title mt-3">Card title</h5>
+              <p class="text-white card-text">Descrizione playlist</p>
             </div>
           </div>
-          <div class="card col-2">
+          <div class="card col-2 p-2">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-              class="card-img-top"
               alt="..."
             />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Descrizione playlist</p>
+            <div class="card-body p-0">
+              <h5 class="text-white card-title mt-3">Card title</h5>
+              <p class="text-white card-text">Descrizione playlist</p>
             </div>
           </div>
-          <div class="card col-2">
+          <div class="card col-2 p-2">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-              class="card-img-top"
               alt="..."
             />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Descrizione playlist</p>
+            <div class="card-body p-0">
+              <h5 class="text-white card-title mt-3">Card title</h5>
+              <p class="text-white card-text">Descrizione playlist</p>
             </div>
           </div>
-          <div class="card col-2">
+          <div class="card col-2 p-2">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-              class="card-img-top"
               alt="..."
             />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Descrizione playlist</p>
+            <div class="card-body p-0">
+              <h5 class="text-white card-title mt-3">Card title</h5>
+              <p class="text-white card-text">Descrizione playlist</p>
             </div>
           </div>
-          <div class="card col-2">
+          <div class="card col-2 p-2">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg/1200px-Baudo_Pippo-2016.05.14.SalTo16-4677_%28cropped%29.jpg"
-              class="card-img-top"
               alt="..."
             />
-            <div class="card-body">
-              <h5 class="card-title">Titolo playlist</h5>
-              <p class="card-text">Descrizione playlist</p>
+            <div class="card-body p-0">
+              <h5 class="text-white card-title mt-3">Card title</h5>
+              <p class="text-white card-text">Descrizione playlist</p>
             </div>
           </div>
         </div>
+
         <!-- ALTRO DI CIO' CHE TI PIACE -->
       </div>
     </div>
