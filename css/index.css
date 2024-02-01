@@ -16,6 +16,8 @@
 .section_left .down{
     height: 67%;
     overflow: scroll;
+    padding-bottom: 30%;
+    padding-top: 5%;
 }
 .down::-webkit-scrollbar {
     width: 9px;
@@ -113,11 +115,11 @@
 .section_right .account .account-info ion-icon{
     color: #b3b3b3
 }
-.section_center {
-    background: #363636;
-    width: 65%;
+/* .section_center {
+    background: #363636; 
     overflow: scroll;
-}
+    width: 60%;
+} */
 .section_center::-webkit-scrollbar {
     width: 9px;
     }
