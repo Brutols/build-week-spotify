@@ -1,5 +1,6 @@
 import { createCard } from "./createComponents.js";
 import { fetchData } from "./fetchData.js";
+import * as constant from "./constant.js"
 //import { createMusicCard } from './createComponents.js';
 
 // Esegui la fetch dei dati e crea la card musicale
@@ -53,7 +54,7 @@ const queries = [
 const initAlbums = () => {
   handleDnone(loader);
   queries.forEach(async (el) => {
-    const res = await fetchData(el);
+    const res = await fetchData(constant.URL,el);
     console.log(res);
     createCard(
       res.data[0].album.cover_medium,

@@ -1,8 +1,8 @@
 export {fetchData};
 
-  const fetchData = async (query) => {
+  const fetchData = async (urlFetch,query) => {
 
-    const url = `https://striveschool-api.herokuapp.com/api/deezer/search?q=${query}`
+    const url = urlFetch+query
     
     let  options = {
          method: "GET",

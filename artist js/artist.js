@@ -3,8 +3,8 @@ import * as constant from "./constant.js"
 import { createJumbotron,createTracksSection } from "./componentArtist.js";
 
 
-const displayArtist = async () => {
-    let data = await fetchData();
+const displayArtist = async (id) => {
+    let data = await fetchData(constant.URL,id);
     let songs = data.data;
     createJumbotron(
         songs[0].album.cover_medium,
@@ -27,4 +27,10 @@ const displayArtist = async () => {
 
 }
 
-displayArtist();
+const getId = ()=>{
+
+    let params = new URLSearchParams(document.location.search)
+    let idURL = params.get('id')
+    displayArtist(idURL)
+}
+window.onload = getId
