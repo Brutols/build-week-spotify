@@ -1,6 +1,7 @@
 import { fetchData } from "../js/fetchData.js";
 import * as constant from "./constant.js"
 import { createJumbotron,createTracksSection } from "./componentArtist.js";
+import { calcDuration } from "../album js/helper.js";
 
 
 const displayArtist = async (id) => {
@@ -9,23 +10,26 @@ const displayArtist = async (id) => {
     let artist = await fetchData(constant.URLq,data.name)
     let songs = artist.data;
     console.log('oggetto dell artista di id: '+id);
-    console.log(songs);
+    console.log(songs[0].artist);
     createJumbotron(
         songs[0].album.cover_medium,
         songs[0].album.title,
-        songs[0].artist.picture_small,
+        songs[0].artist.picture_xl,
         data.name,
         songs[0].artist.id,
         songs[0].artist.id,
         '2',
         constant.centerSection);
         const centerSectionTrackList = document.querySelector('.section_center .track-list');
+        
     for (const song of songs) {
-        console.log(song.title);
+        console.log(song.rank);
+        let minuti = calcDuration(song.duration);
         createTracksSection(
             song.title,
             song.album.cover_medium,
-            song.duration,
+            song.rank,
+            minuti,
             centerSectionTrackList)
      }
 };

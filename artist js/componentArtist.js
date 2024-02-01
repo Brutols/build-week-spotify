@@ -14,8 +14,7 @@ const createJumbotron = (
 
     const jumbotron = document.createElement("div");
     jumbotron.className = "jumbotron d-flex flex-column";
-    jumbotron.style.backgroundSize = "contain";
-    jumbotron.style.backgroundImage = `url(${cover})`;
+    jumbotron.style.backgroundImage = `url(${artistImg})`;
 
 
     const jumboControls = document.createElement("div");
@@ -101,12 +100,13 @@ const createJumbotron = (
 
 
     const rowDiv = document.createElement("div");
-    rowDiv.className = "row pt-3";
+    rowDiv.className = "row pt-3 gap-3";
     containerDoom.appendChild(rowDiv);
 
 
     const col7Div = document.createElement("div");
-    col7Div.className = "col-7";
+    col7Div.className = "col-7 div_scroll";
+    col7Div.style.height = "50vh"
     rowDiv.appendChild(col7Div);
 
 
@@ -119,7 +119,7 @@ const createJumbotron = (
 
 
     const col5Div = document.createElement("div");
-    col5Div.className = "col-5";
+    col5Div.className = "col-4";
     rowDiv.appendChild(col5Div);
 
 
@@ -139,7 +139,7 @@ const createJumbotron = (
 
     const image = document.createElement("img");
     image.className = "w-100";
-    image.src = "https://www.sorrisi.com/wp-content/uploads/2021/08/MG_0039_alta.jpg";
+    image.src = `${artistImg}`;
     image.alt = "";
     col3Div.appendChild(image);
 
@@ -154,7 +154,7 @@ const createJumbotron = (
 
     const yellowcardParagraph = document.createElement("p");
     yellowcardParagraph.className = "m-0";
-    yellowcardParagraph.textContent = "Di Yellowcard";
+    yellowcardParagraph.textContent = `Di ${artist}`;
     col9Div.appendChild(yellowcardParagraph);
 
 
@@ -169,6 +169,7 @@ const createJumbotron = (
 const createTracksSection = (
   song_title,
   album_cover,
+  rank,
   duration,
   container) => {
   const trackList = document.querySelector(".track-list");
@@ -208,7 +209,7 @@ const createTracksSection = (
 
   const col4Div = document.createElement("div");
   col4Div.className = "col-4";
-  col4Div.textContent = "Visualizzazioni";
+  col4Div.textContent = `${rank}`;
   
   const col2Div = document.createElement("div");
   col2Div.className = "col-2";
