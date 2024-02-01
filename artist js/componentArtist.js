@@ -15,7 +15,7 @@ const createJumbotron = (
     const jumbotron = document.createElement("div");
     jumbotron.className = "jumbotron d-flex flex-column";
     jumbotron.style.backgroundSize = "contain";
-    jumbotron.style.backgroundImage = "url('https://e-cdns-images.dzcdn.net/images/artist/f39ae915a61561be8eb391c1dc48f40f/500x500-000000-80-0-0.jpg')";
+    jumbotron.style.backgroundImage = `url(${cover})`;
 
 
     const jumboControls = document.createElement("div");
@@ -61,7 +61,7 @@ const createJumbotron = (
 
     const titolo = document.createElement("h1");
     titolo.className = "ps-2";
-    titolo.textContent = "Yellowcard";
+    titolo.textContent = `${artist}`;
     jumbotron.appendChild(titolo);
 
     const listeners = document.createElement("h6");
@@ -168,7 +168,9 @@ const createJumbotron = (
 
 const createTracksSection = (
   song_title,
-  album_cover,container) => {
+  album_cover,
+  duration,
+  container) => {
   const trackList = document.querySelector(".track-list");
 
 
@@ -210,7 +212,7 @@ const createTracksSection = (
   
   const col2Div = document.createElement("div");
   col2Div.className = "col-2";
-  col2Div.textContent = "Durata";
+  col2Div.textContent = `${duration}`;
   
 
   trackDetails.appendChild(col6Div);
