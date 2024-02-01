@@ -112,7 +112,7 @@ export const createTracksSection = (container) => {
 
   const iconPlay = document.createElement("ion-icon");
   iconPlay.setAttribute("name", "play-sharp");
-  iconPlay.className = "icon_play"
+  iconPlay.className = "icon_play";
   tracksControls.appendChild(iconPlay);
   const iconHeart = document.createElement("ion-icon");
   iconHeart.setAttribute("name", "heart-outline");
@@ -204,6 +204,14 @@ export const createTrack = (
   trackDuration.className = "col-4 d-flex justify-content-end track_duration";
   trackDuration.textContent = duration;
   track.appendChild(trackDuration);
+
+  const trackDurationAlt = document.createElement("div");
+  trackDurationAlt.className =
+    "col-4 d-flex justify-content-end track_duration track_duration_alt d-none";
+  const altIcon = document.createElement("ion-icon");
+  altIcon.setAttribute("name", "ellipsis-vertical");
+  trackDurationAlt.appendChild(altIcon);
+  track.appendChild(trackDurationAlt);
 
   container.appendChild(track);
 };
