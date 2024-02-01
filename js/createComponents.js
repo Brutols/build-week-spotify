@@ -3,7 +3,7 @@
 // function createMusicCard(userData, trackData) {
 //     const musicCardDiv = document.createElement('div');
 //     musicCardDiv.className = 'card';
-    
+
 //     const cardHTML = `
 //       <div class="card-top">
 //         <div class="user-dropdown">
@@ -44,11 +44,11 @@
 //         </div>
 //       </div>
 //     `;
-    
+
 //     musicCardDiv.innerHTML = cardHTML;
 //     return musicCardDiv;
 //   }
-  
+
 //   // Funzione per generare la lista delle tracce
 //   function generateTrackList(trackData) {
 //     let trackListHTML = '';
@@ -67,34 +67,30 @@
 //     return trackListHTML;
 //   }
 
-
 export const createCard = (src, title, desc, id, container) => {
+  const link = document.createElement("a");
+  const divCard = document.createElement("div");
+  const img = document.createElement("img");
+  const divCardBody = document.createElement("div");
+  const h5 = document.createElement("h5");
+  const p = document.createElement("p");
 
-    const link = document.createElement("a")
-    const divCard = document.createElement('div');
-    const img = document.createElement('img');
-    const divCardBody = document.createElement('div');
-    const h5 = document.createElement('h5');
-    const p = document.createElement('p');
+  link.href = `./album.html?id=${id}`;
+  divCard.className = "card p-2";
+  divCard.id = id;
+  img.src = src;
+  img.alt = "...";
+  divCardBody.className = "card-body p-0";
+  h5.className = "text-white card-title mt-3 text-truncate";
+  h5.textContent = title;
+  p.className = "text-white card-text";
+  p.textContent = desc;
 
+  divCardBody.appendChild(h5);
+  divCardBody.appendChild(p);
+  divCard.appendChild(img);
+  divCard.appendChild(divCardBody);
+  link.appendChild(divCard);
 
-    link.href = `./album.html?id=${id}`
-    divCard.className = 'card p-2';
-    divCard.id = id;
-    img.src = src;
-    img.alt = '...';
-    divCardBody.className = 'card-body p-0';
-    h5.className = 'text-white card-title mt-3 text-truncate';
-    h5.textContent = title;
-    p.className = 'text-white card-text';
-    p.textContent = desc;
-
-
-    divCardBody.appendChild(h5);
-    divCardBody.appendChild(p);
-    divCard.appendChild(img);
-    divCard.appendChild(divCardBody);
-    link.appendChild(divCard)
-
-    container.appendChild(link);
-}
+  container.appendChild(link);
+};

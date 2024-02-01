@@ -10,15 +10,16 @@
 body {
   background-color: #101010;
 }
-
-.sections {
-  margin-bottom: 10vh;
-}
-
 .section_center {
-  background: #363636;
+  background: #121212;
+  width: 65%;
   position: relative;
   min-height: 100vh;
+}
+@media (max-width: 991px) {
+  .section_center {
+    width: 100%;
+  }
 }
 
 .jumbotron {

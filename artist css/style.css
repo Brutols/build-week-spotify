@@ -21,11 +21,20 @@
     background: #101010;
   }
   
-  .section_center {
-    background: #363636;
+  /* .section_center {
     position: relative;
     min-height: 100vh;
     height: fit-content;
+  } */
+  .section_center {
+    background: #121212;
+    width: 65%;
+    overflow: scroll;
+}
+@media (max-width: 991px) {
+    .section_center {
+      width: 100%;
+    }
   }
   
   .controls {
