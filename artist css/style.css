@@ -105,7 +105,7 @@
   color: white;
 }
 .div_scroll{
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 .div_scroll::-webkit-scrollbar {
   width: 9px;

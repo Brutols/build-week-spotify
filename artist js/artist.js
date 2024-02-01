@@ -7,10 +7,11 @@ import { calcDuration } from "../album js/helper.js";
 const displayArtist = async (id) => {
     let data = await fetchData(constant.URL,id);
     console.log('trovo il nome dell artista che ha quell id');
+    //console.log(data);
     let artist = await fetchData(constant.URLq,data.name)
     let songs = artist.data;
     console.log('oggetto dell artista di id: '+id);
-    console.log(songs[0].artist);
+    //console.log(songs[0].artist);
     createJumbotron(
         songs[0].album.cover_medium,
         songs[0].album.title,
