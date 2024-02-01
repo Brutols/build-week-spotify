@@ -166,7 +166,9 @@ const createJumbotron = (
 
 };
 
-const createTracksSection = (song_title,album_cover,container) => {
+const createTracksSection = (
+  song_title,
+  album_cover,container) => {
   const trackList = document.querySelector(".track-list");
 
 
