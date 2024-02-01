@@ -100,6 +100,9 @@ body {
 .jumbotron_text h1 {
   font-size: 56px;
   font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .album_artist img {
@@ -218,6 +221,10 @@ body {
 
   .jumbotron_text h1 {
     font-size: 30px;
+    white-space: unset;
+    overflow: unset;
+    text-overflow: unset;
+    text-align: center;
   }
 
   .jumbotron_text h6:first-child {
@@ -242,14 +249,14 @@ body {
     margin-top: 20px;
   }
 
-  .track_duration, .track_plays {
-    display: none!important;
+  .track_duration,
+  .track_plays {
+    display: none !important;
   }
 
   .track_duration_alt {
-    display: flex!important;
+    display: flex !important;
   }
-
 }
 
 @media screen and (max-width: 370px) {
@@ -269,7 +276,6 @@ body {
   .album_artist img {
     width: 20px;
   }
-
 }
 
 @media screen and (min-height: 825px) {

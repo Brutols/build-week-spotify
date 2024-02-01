@@ -65,7 +65,6 @@ export const createJumbotron = (
   jumbotronText.appendChild(albumWord);
 
   const albumTitle = document.createElement("h1");
-  albumTitle.className = "text-truncate";
   albumTitle.textContent = title;
   jumbotronText.appendChild(albumTitle);
 
