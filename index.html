@@ -341,11 +341,11 @@
           src="https://bp0.blogger.com/_74tG8e6ZDUQ/SJhxJaelb2I/AAAAAAAAAzk/IuorR42f-b4/s400/50_cent_massacre.jpg"
           alt=""
         />
-        <div class="d-flex flex-column">
+        <div class="d-flex flex-column d-none d-sm-block">
           <h6 class="mb-0">50 Cent</h6>
           <p class="mb-0">Candy Shop</p>
         </div>
-        <ion-icon name="heart-outline"></ion-icon>
+        <ion-icon name="heart-outline" class="d-none d-sm-block"></ion-icon>
       </div>
       <div class="controls-center d-flex flex-column align-items-center gap-1">
         <div
@@ -357,8 +357,8 @@
           <ion-icon name="play-skip-forward"></ion-icon>
           <ion-icon name="repeat"></ion-icon>
         </div>
-        <div class="bar d-flex justify-content-center align-items-center gap-2">
-          <p class="mb-0">1:58</p>
+        <div class="bar d-flex justify-content-center align-items-center gap-3">
+          <p class="mb-0 w-auto">1:58</p>
           <div class="progress"><div class="percent"></div></div>
           <p class="mb-0">3:20</p>
         </div>
@@ -366,12 +366,15 @@
       <div
         class="controls-right d-flex justify-content-end align-items-center gap-2"
       >
-        <ion-icon name="flashlight-outline"></ion-icon>
-        <ion-icon name="menu-outline"></ion-icon>
-        <ion-icon name="layers-outline"></ion-icon>
+        <ion-icon
+          name="flashlight-outline"
+          class="d-none d-md-block"
+        ></ion-icon>
+        <ion-icon name="menu-outline" class="d-none d-md-block"></ion-icon>
+        <ion-icon name="layers-outline" class="d-none d-md-block"></ion-icon>
         <ion-icon name="volume-medium-sharp"></ion-icon>
         <div class="progress"><div class="percent"></div></div>
-        <ion-icon name="resize-outline"></ion-icon>
+        <ion-icon name="resize-outline" class="d-none d-md-block"></ion-icon>
       </div>
     </div>
   </body>
