@@ -98,7 +98,7 @@ const createJumbotron = (
   containerDoom.appendChild(rowDiv);
 
   const col7Div = document.createElement("div");
-  col7Div.className = "div_scroll col-12 col-md-7";
+  col7Div.className = "div_scroll col-12 col-md-7 hidden";
   col7Div.style.height = "50vh";
   rowDiv.appendChild(col7Div);
 
