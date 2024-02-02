@@ -1,8 +1,12 @@
 import { createCard } from "./createComponents.js";
 import { fetchData } from "./fetchData.js";
+import { numRandom } from "../artist js/helper.js";
 import * as constant from "./constant.js"
+import * as constantArtist from "../artist js/constant.js"
 //import { createMusicCard } from './createComponents.js';
+let array = [
 
+];
 // Esegui la fetch dei dati e crea la card musicale
 // fetchData().then(data => {
 //   if (data) {
@@ -25,7 +29,14 @@ import * as constant from "./constant.js"
 const cardWrapper = document.querySelector(".altro-di-ciò");
 const loader = document.querySelector(".loader_wrapper");
 let isDnone = true;
-
+const pushArray = async ()=>{
+  handleDnone(loader);
+  for (let i = 1; i < 10; i++) {
+    let data = await fetchData(constantArtist.URL,i)
+    array.push(data.name);
+  }
+  initAlbums();
+}
 const handleDnone = (el) => {
   if (isDnone) {
     el.classList.remove("d-none");
@@ -52,10 +63,10 @@ const queries = [
 ];
 
 const initAlbums = () => {
-  handleDnone(loader);
-  queries.forEach(async (el) => {
+
+  array.forEach(async (el) => {
     const res = await fetchData(constant.URL,el);
-    console.log(res);
+    //console.log(res);
     createCard(
       res.data[0].album.cover_medium,
       res.data[0].album.title,
@@ -67,4 +78,5 @@ const initAlbums = () => {
   setTimeout(() => {handleDnone(loader)}, "1000");
 };
 
-document.addEventListener("DOMContentLoaded", initAlbums());
+document.addEventListener("DOMContentLoaded", pushArray);
+
