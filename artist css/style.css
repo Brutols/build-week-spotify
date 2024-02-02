@@ -126,7 +126,10 @@
   background: linear-gradient(180deg, rgba(34,34,34,1) 30%, rgba(18,18,18,1) 100%);
   color: white;
 }
-.div_scroll{
+.hidden{
+  overflow: hidden;
+}
+.scroll{
   overflow-y: scroll;
 }
 .div_scroll::-webkit-scrollbar {
