@@ -11,7 +11,7 @@ const createJumbotron = (
   container
 ) => {
   const jumbotron = document.createElement("div");
-  jumbotron.className = "jumbotron d-flex flex-column";
+  jumbotron.className = "jumbotron d-flex flex-column p-2";
   jumbotron.style.backgroundImage = `url(${artistImg})`;
 
   const jumboControls = document.createElement("div");
@@ -48,13 +48,15 @@ const createJumbotron = (
   profile.appendChild(openProfile);
 
   const verified = document.createElement("div");
-  verified.className = "d-flex";
+  verified.className = "d-flex align-items-center gap-1";
   jumbotron.appendChild(verified);
   const checkIcon = document.createElement("ion-icon");
   checkIcon.setAttribute("name", "checkmark-outline");
+  checkIcon.id = "verificato";
   verified.appendChild(checkIcon);
   const verifiedText = document.createElement("h6");
   verifiedText.textContent = "Artista verificato";
+  verifiedText.className = "mb-0";
   verified.appendChild(verifiedText);
 
   const titolo = document.createElement("h1");
@@ -71,7 +73,7 @@ const createJumbotron = (
   const containerDoom = document.createElement("div");
   containerDoom.className = "container";
   const innerContainer = document.createElement("div");
-  innerContainer.className = "d-flex align-items-center gap-3";
+  innerContainer.className = "d-flex align-items-center gap-3 pt-4";
   containerDoom.appendChild(innerContainer);
 
   const playIcon = document.createElement("ion-icon");
