@@ -26,6 +26,18 @@
   .followingToggle{
     background-color: #1ED760!important;
   }
+  .track-list {
+    list-style-type: none;
+    counter-reset: item;
+    
+  }
+  .track-list li::marker{
+    content: counter(item);
+  }
+ .track-list li {
+    counter-increment: item;
+    font-weight: bold;
+  }
   .section_center {
     background: #121212;
     width: 65%;
