@@ -11,9 +11,7 @@ body {
   background-color: #101010;
 }
 
-.sections {
-  margin-bottom: 10vh;
-}
+
 
 .section_center {
   background: #121212;
@@ -169,6 +167,7 @@ body {
   padding-inline: 20px;
   padding-block: 5px;
   overflow: scroll;
+  margin-bottom: 9vh
 }
 
 .tracks_list::-webkit-scrollbar {
