@@ -83,8 +83,7 @@ const createJumbotron = (
 
   const followingLink = document.createElement("a");
   followingLink.href = "#";
-  followingLink.id = "following";
-  followingLink.className = "btn border-white text-white fw-bold";
+  followingLink.className = "btn border-white text-white fw-bold following";
   followingLink.textContent = "FOLLOWING";
   innerContainer.appendChild(followingLink);
 
@@ -99,19 +98,19 @@ const createJumbotron = (
   containerDoom.appendChild(rowDiv);
 
   const col7Div = document.createElement("div");
-  col7Div.className = "col-7 div_scroll";
+  col7Div.className = "div_scroll col-12 col-md-7";
   col7Div.style.height = "50vh";
   rowDiv.appendChild(col7Div);
 
   const popolariTitle = document.createElement("h5");
   popolariTitle.textContent = "Popolari";
   col7Div.appendChild(popolariTitle);
-  const trackList = document.createElement("ol");
-  trackList.className = "track-list";
+  const trackList = document.createElement("ul");
+  trackList.className = "track-list d-flex flex-column gap-3";
   col7Div.appendChild(trackList);
 
   const col5Div = document.createElement("div");
-  col5Div.className = "col-4";
+  col5Div.className = "col-4 d-none d-md-block";
   rowDiv.appendChild(col5Div);
 
   const piaccionoTitle = document.createElement("h5");
@@ -127,7 +126,7 @@ const createJumbotron = (
   innerRowDiv.appendChild(col3Div);
 
   const image = document.createElement("img");
-  image.className = "w-100";
+  image.className = "w-100 rounded-circle";
   image.src = `${artistImg}`;
   image.alt = "";
   col3Div.appendChild(image);
@@ -137,12 +136,12 @@ const createJumbotron = (
   innerRowDiv.appendChild(col9Div);
 
   const miPiaceParagraph = document.createElement("p");
-  miPiaceParagraph.className = "m-0";
+  miPiaceParagraph.className = "m-0 ps-2";
   miPiaceParagraph.textContent = "Hai messo Mi piace a brani";
   col9Div.appendChild(miPiaceParagraph);
 
   const yellowcardParagraph = document.createElement("p");
-  yellowcardParagraph.className = "m-0";
+  yellowcardParagraph.className = "m-0 ps-2";
   yellowcardParagraph.textContent = `Di ${artist}`;
   col9Div.appendChild(yellowcardParagraph);
 
@@ -164,13 +163,14 @@ const createTracksSection = (
   const trackItem = document.createElement("li");
 
   const trackDetails = document.createElement("div");
-  trackDetails.className = "row";
+  trackDetails.className =
+    "row w-auto justify-content-between align-items-center";
 
   const col6Div = document.createElement("div");
-  col6Div.className = "col-6";
+  col6Div.className = "col-8 col-sm-7";
 
   const flexDiv = document.createElement("div");
-  flexDiv.className = "d-flex";
+  flexDiv.className = "d-flex align-items-center";
 
   const trackImage = document.createElement("img");
   trackImage.className = "w-50";
@@ -178,6 +178,7 @@ const createTracksSection = (
   trackImage.alt = "";
 
   const trackTitle = document.createElement("h6");
+  trackTitle.className = "mb-0 ps-2";
   trackTitle.textContent = `${song_title}`;
 
   flexDiv.appendChild(trackImage);
@@ -186,7 +187,7 @@ const createTracksSection = (
   col6Div.appendChild(flexDiv);
 
   const col4Div = document.createElement("div");
-  col4Div.className = "col-4";
+  col4Div.className = "d-none d-sm-block col-3";
   col4Div.textContent = `${rank}`;
 
   const col2Div = document.createElement("div");
