@@ -20,6 +20,12 @@
     min-height: 100vh;
     height: fit-content;
   } */
+  #following:hover{
+    background-color: #1ED760;
+  }
+  .following{
+
+  }
   .section_center {
     background: #121212;
     width: 65%;

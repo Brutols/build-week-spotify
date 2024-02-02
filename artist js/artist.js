@@ -4,6 +4,7 @@ import { createJumbotron,createTracksSection } from "./componentArtist.js";
 import { calcDuration } from "../album js/helper.js";
 
 
+
 const displayArtist = async (id) => {
     let data = await fetchData(constant.URL,id);
     console.log('trovo il nome dell artista che ha quell id');
