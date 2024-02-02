@@ -2,7 +2,7 @@ import { fetchData } from "../js/fetchData.js";
 import * as constant from "./constant.js"
 import { createJumbotron,createTracksSection } from "./componentArtist.js";
 import { calcDuration } from "../album js/helper.js";
-
+import { toggle } from "./helper.js";
 
 
 const displayArtist = async (id) => {
@@ -24,6 +24,9 @@ const displayArtist = async (id) => {
         constant.centerSection);
         const centerSectionTrackList = document.querySelector('.section_center .track-list');
         
+        const following = document.querySelector('.following');
+        following.onclick = toggle;
+
     for (const song of songs) {
         console.log(song.rank);
         let minuti = calcDuration(song.duration);

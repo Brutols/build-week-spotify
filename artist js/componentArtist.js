@@ -83,8 +83,7 @@ const createJumbotron = (
 
   const followingLink = document.createElement("a");
   followingLink.href = "#";
-  followingLink.id = "following";
-  followingLink.className = "btn border-white text-white fw-bold";
+  followingLink.className = "following btn border-white text-white fw-bold";
   followingLink.textContent = "FOLLOWING";
   innerContainer.appendChild(followingLink);
 
